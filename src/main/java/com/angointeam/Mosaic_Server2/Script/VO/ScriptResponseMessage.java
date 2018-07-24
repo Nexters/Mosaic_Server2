@@ -1,4 +1,4 @@
-package com.angointeam.Mosaic_Server2.SignIn.VO;
+package com.angointeam.Mosaic_Server2.Script.VO;
 
 
 import lombok.Getter;
@@ -8,7 +8,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-public class ApiResponseMessage {
+public class ScriptResponseMessage {
 
     // HttpStatus
     private String status;
@@ -19,9 +19,9 @@ public class ApiResponseMessage {
     // Error Code
     private String errorCode;
 
-    public ApiResponseMessage() {}
+    public ScriptResponseMessage() {}
 
-    public ApiResponseMessage(String status, String message, String errorCode, String errorMessage) {
+    public ScriptResponseMessage(String status, String message, String errorCode, String errorMessage) {
         this.status = status;
         this.message = message;
         this.errorCode = errorCode;

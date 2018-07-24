@@ -14,10 +14,10 @@ public interface UserMapper {
      List<UserVO> getUsers() throws Exception;
 
      @Select("INSERT INTO User(email,uuid,nickname) VALUES(#{email},#{uuid},#{nickname})")
-     UserVO insert(UserVO user) throws Exception;
+     UserVO insertUser(UserVO user) throws Exception;
 
      @Select("SELECT * FROM User WHERE email = #{email}")
-     UserVO findByEmail(String email) throws Exception;
+     UserVO findUserByEmail(String email) throws Exception;
 
 
 
